@@ -13,17 +13,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div class="mainCard">
+    <div class="mainCard" id="mainCard">
         <div class="heading">
             <h1>Rock Paper Scissors</h1>
             <h1>Lizard Spock</h1>
         </div>
         <div class="ScoreContainer" id="ScoreContainer">
-            <div class="yourScoreContainer" id="yourScore">
+            <div class="yourScoreContainer">
                 <h2>Your Score</h2>
                 <span id="yourScore">0</span>
             </div>
-            <div class="computerScoreContainer" id="computerScore">
+            <div class="computerScoreContainer">
                 <h2>Computer Score</h2>
                 <span id="computerScore">0</span>
             </div>
@@ -36,19 +36,20 @@
             <button class="btn" onclick="choice('lizard')"><i class="fa-solid fa-hand-lizard"></i></button>
         </div>
         <div class="whoGettingScoreContainer" id="whoGettingScoreContainer">
-            <span class="whoGettingScore">you get 1 point</span>
+            <span class="whoGettingScore" id="whoGettingScore"></span>
         </div>
-        <div class="gameOverContainer" id="gameOverContainer">
+        <div class="gameOverContainer none" id="gameOverContainer">
             <p><span id="wonPerson"></span> Won !!!</p>
             <p>Do you want to continue ?</p>
             <div class="buttonContainer">
-                <button>yes</button>
-                <button>No</button>
+                <button onclick="location.reload()">yes</button>
+                <button onclick="NoMoreGameFunction()">No</button>
             </div>
         </div>
     </div>
-    <div class="ThankYouMessage">
+    <div class="ThankYouMessage none" id="ThankYouMessage">
         <h2>Thank You for playing</h2>
     </div>
+    <script src="./script.js"></script>
 </body>
 </html>

@@ -9,16 +9,16 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: url('https://wallpaperaccess.com/full/5777405.jpg');
+    background-image: url('https://c4.wallpaperflare.com/wallpaper/590/511/632/minimalism-glue-time-humor-wallpaper-preview.jpg');
     background-repeat: no-repeat;
     background-size: cover;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: white;
+    color: rgb(37, 7, 7);
 }
 
 .mainCard{
     width: 500px;
     border-radius: 2rem;
-    background-color: blueviolet;
+    background-color: rgb(229, 213, 244);
     margin: auto;
     display: flex;
     justify-content: center;
@@ -26,21 +26,23 @@ body{
     flex-direction: column;
     padding: 2rem 0rem;
     box-shadow: 1rem 1rem 5rem rgb(6, 6, 11);
-    opacity: 0.9;
+    opacity: 0.7;
+    border: 1px solid black;
 
 }
 
 .ThankYouMessage{
     width: 300px;
     margin: auto;
-    background-color: blueviolet;
+    background-color: rgb(229, 213, 244);
     height: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 1rem;
     opacity: 0.9;
-    box-shadow: 1rem 1rem 5rem rgb(6, 6, 11);
+    box-shadow: 2rem 3rem 10rem rgb(6, 6, 11);
+    border: 1px solid black;
 }
 
 .none{
@@ -58,6 +60,7 @@ body{
     width: 100%;
     justify-content: space-around;
     text-align: center;
+    font-weight: 700;
 }
 
 .yourScoreContainer,.computerScoreContainer{
@@ -73,18 +76,21 @@ body{
 .btn{
     width: 4rem;
     height: 4rem;
-    font-size: 3rem;
+    font-size: 2.5rem;
     border-radius: 50%;
-    border: 0px;
+    border: 1px solid black;
 }
 
 .btn:hover{
     transform: scale(1.1);
-    transition: 0.4s;
+    transition: 0.2s;
+    color: rgb(198, 180, 243);
+    background-color: rgb(37, 32, 96);
 }
 
 .whoGettingScoreContainer{
     margin: 1rem;
+    font-weight: 800;
 }
 
 .gameOverContainer{
@@ -106,10 +112,11 @@ body{
     border-radius: 0.5rem;
     border: 0px;
     font-weight: 700;
+    border: 1px solid black;
 }
 
 .buttonContainer button:hover{
-    background-color: blue;
+    background-color: rgb(80, 80, 137);
     color: white;
 }
 
